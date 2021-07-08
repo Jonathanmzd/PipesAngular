@@ -20,3 +20,35 @@
     </p-card>
   </div>
 </div>
+
+<div class="text-layout">
+  <h1>Date | Fecha | Pipe</h1>
+  <p>Pipe para mostrar las fechas.</p>
+</div>
+
+<div class="p-grid">
+  <div class="p-col-6">
+    <p-card>
+      <ul>
+        <li> fecha </li>
+        <li> fecha | date </li>
+        <li> fecha | date:'short' </li>
+        <li> fecha | date:'long' </li>
+        <li> fecha | date:'MMMM' </li>
+        <li> fecha | date:'MMMM dd, yyyy' </li>
+      </ul>
+    </p-card>
+  </div>
+  <div class="p-col-6">
+    <p-card>
+      <ul>
+        <li>{{fecha}}</li>
+        <li>{{fecha | date }}</li>
+        <li>{{fecha | date:'short' }}</li>
+        <li>{{fecha | date:'long' }}</li>
+        <li>{{fecha | date:'MMMM' }}</li>
+        <li>{{fecha | date:'MMMM dd, yyyy' }}</li>
+      </ul>
+    </p-card>
+  </div>
+</div>
