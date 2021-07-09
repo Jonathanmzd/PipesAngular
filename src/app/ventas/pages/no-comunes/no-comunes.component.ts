@@ -24,6 +24,15 @@ export class NoComunesComponent {
     '=1': 'tenemos un cliente esperando',
     '=2': 'tenemos dos clientes esperando',
     '=3': 'tenemos tres clientes esperando',
-    'other': 'tenemos //#region  clientes esperando'
+    'other': 'tenemos # clientes esperando'
+  }
+
+  cambiarCliente(){
+    this.nombre = 'Jonathan';
+    this.genero = 'masculino';
+  }
+
+  borrarCliente(){
+    this.clientes.splice(0,1);
   }
 }
