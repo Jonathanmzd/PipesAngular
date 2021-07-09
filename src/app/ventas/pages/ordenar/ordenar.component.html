@@ -9,17 +9,17 @@
 
     <button pButton label="Toggle Mayusculas" class="p-mr-1 p-button-warning"  (click)="BtnMayusculas()"></button>
 
-    <button pButton icon="pi pi-sort" label="Por nombre" class="p-mr-1"></button>
+    <button pButton icon="pi pi-sort" label="Por nombre" class="p-mr-1" (click)="cambiarOrden('nombre')"></button>
 
-    <button pButton icon="pi pi-sort" label="Valores" class="p-mr-1 p-button-success"></button>
+    <button pButton icon="pi pi-sort" label="Valores" class="p-mr-1 p-button-success" (click)="cambiarOrden('vuela')"></button>
 
-    <button pButton icon="pi pi-sort" label="Por Color" class="p-mr-1 p-button-help"></button>
+    <button pButton icon="pi pi-sort" label="Por Color" class="p-mr-1 p-button-help" (click)="cambiarOrden('color')"></button>
   </div>
 </p-toolbar>
 
 <div class="p-grid">
   <div class="p-col p-mt-2">
-    <p-table [value]="heroes | ordenar">
+    <p-table [value]="heroes | ordenar:ordenarPor">
       <ng-template pTemplate="header">
           <tr>
               <th>Nombre</th>
