@@ -9,13 +9,14 @@
       <p>
         Saludos {{nombre}}, es un placer {{ genero | i18nSelect:invitacionMapa }} a nuestro evento.
       </p>
-      <button  pButton type="button" class="p-button-success" label="Cambiar Persona" (click)="cambiarCliente()"></button>
+      <button pButton type="button" class="p-button-success" label="Cambiar Persona"
+        (click)="cambiarCliente()"></button>
     </p-fieldset>
   </div>
   <div class="p-col p-md-6">
     <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
       <p>
-      Actualmente tenemos {{clientes.length | i18nPlural:clientesMapa }}
+        Actualmente tenemos {{clientes.length | i18nPlural:clientesMapa }}
       </p>
       <button pButton type="button" class="p-button-danger" label="Borrar Cliente" (click)="borrarCliente()"></button>
     </p-fieldset>
@@ -44,4 +45,15 @@
       <pre>{{'palabra' | slice:0:4}}</pre>
     </p-fieldset>
   </div>
+
+  <div class="p-col p-md-6">
+    <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+      <ul>
+        <li *ngFor="let item of persona | keyvalue">
+          <b>{{item.key | titlecase}}:</b> {{item.value}}
+        </li>
+      </ul>
+    </p-fieldset>
+  </div>
+
 </div>
