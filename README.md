@@ -51,6 +51,12 @@ PrimeNG es un paquete de componentes estilizados que contienen funcionalidades b
 
 Recuerden que PrimeNG no es el único, hay muchos pero la mayoría funcionan de formas similares, importando módulos, por eso mi objetivo de entrenarlos bastante bien con el manejo de módulos en todo momento para que nos familiaricemos con esta métodología.
 
+## Fundamentos Sección 11: Pipes personalizados:
+
+1. Pipes personalizados
+2. Argumentos hacia los Pipes
+3. SortableTable manual y usando PrimeNg
+
 ## Link´s Apoyo
 
 129. https://www.primefaces.org/primeng/
@@ -64,3 +70,6 @@ Recuerden que PrimeNG no es el único, hay muchos pero la mayoría funcionan de 
 150. https://angular.io/api/common/KeyValuePipe
 151. https://angular.io/api/common/JsonPipe
 152. https://angular.io/api/common/AsyncPipe
+
+156. https://primefaces.org/primeng/showcase/#/setup
+162. https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
